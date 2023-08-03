@@ -1,0 +1,21 @@
+*{% extends 'base.html' %} {% block content %}
+<h1>Rentals</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/static/color.css" type="text/css" rel="stylesheet" />
+
+<div class="row ">
+    {% for rental in rentals %}
+    <div class="col ">
+        <div class="card " style="width: 18rem,; ">
+            <img alt="... " class="card-img-top " src="{{ rental.Image_url }} ">
+            <h5 class="card-title ">{{ rental.Name_of_rental }}</h5>
+            <p class="card-text ">Type of Rental: {{ rental.Type_of_rental }}</p>
+            <p class="card-text ">Total No. of Units: {{ rental.Total_no_of_units }}</p>
+            <p class="card-text ">Rent: Kshs {{ rental.Rent }}</p>
+            <a href="{% url 'details' %} " class="btn btn-primary ">More Details</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

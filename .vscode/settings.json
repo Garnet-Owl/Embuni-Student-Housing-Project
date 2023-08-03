@@ -1,0 +1,10 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 16,
+    "files.autoGuessEncoding": true,
+    "files.autoSaveDelay": 100,
+    "terminal.integrated.automationShell.linux": "",
+    "workbench.commandPalette.history": 60,
+    "jupyter.allowInput": false,
+    "jupyter.allowImportFromNotebook": false
+}

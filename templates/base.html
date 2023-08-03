@@ -1,0 +1,50 @@
+<!doctype html>
+
+
+<head>
+     <Required meta tags -->
+    <link href="/static/color.css" type="text/css" rel="stylesheet" />
+    <!--
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+
+    <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css " rel="stylesheet " integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl " crossorigin="anonymous ">
+
+    <title>Rental System</title>
+</head>
+
+<body>
+    <header>
+        <h1><b>Rock-Heed Housing</b></h1>
+    </header>
+    <!-- As a link -->
+    <nav class="navbar navbar-light bg-light ">
+        <div class="container-fluid ">
+            <div>
+                <a class="navbar-brand " href="# ">Housing &nbsp;</a>
+                <a href="/rentaldetails/templates/about.html">About & Services</a>&nbsp;
+                <a href="#">  Contact  </a>
+                <a href="# "> Log in</a>
+                <a href="# "> Create a new account</a>
+            </div>
+            <form action="{% url 'details' %}" method="get ">
+                <p>search:</p>
+                <input type="search" name="search" />
+                <input type="submit" value="search " />
+            </form>
+        </div>
+    </nav>
+    <div class="container ">
+        {% block content %} {% endblock %}
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css " rel="stylesheet " integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl " crossorigin="anonymous ">
+    </div>
+
+</body>
+<footer>
+    <small><i>Copyright &copy;2022 Embuni</i></small>
+</footer>
+
+</html>

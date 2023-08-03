@@ -1,0 +1,19 @@
+body {
+    background-color: #95B8D1;
+    color: #95B8D1;
+    font-family: Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: medium;
+}
+
+card {
+    color: #CCC9DC;
+}
+
+footer {
+    color: #333333;
+    font-size: medium;
+}
+
+h1 {
+    background-color: #F4E409;
+}

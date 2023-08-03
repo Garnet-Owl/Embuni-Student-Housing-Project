@@ -1,0 +1,31 @@
+{% extends 'base1.html' %} {% block content %}
+<h1><i>Rental Details</i></h1>
+    <link href="/static/color.css" type="text/css" rel="stylesheet" />
+<div class="row">
+    {% for detail in details2 %}
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img alt="..." class="card-img-top" src="{{ detail.Image_url1 }}">
+            <div class="card-body">
+                <h5>
+                    Specifications:
+                </h5>
+                <p class="card-text"><i> Features for each Rental unit in</i> <b>{{detail.Name }} </b>:</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Deposit: {{ detail.Deposit }}</li>
+                <li class="list-group-item">Geographical Location: {{ detail.Location }}</li>
+                <li class="list-group-item">Floors: {{ detail.Floors }}</li>
+                <li class="list-group-item">Walls: {{ detail.Walls }}</li>
+                <li class="list-group-item">Roof: {{ detail.Roof }}</li>
+                <li class="list-group-item">Bathroom: {{ detail.Bathroom }}</li>
+                <li class="list-group-item">Electricity: {{ detail.Electricity }}</li>
+                <li class="list-group-item">Water: {{ detail.Water }}</li>
+                <li class="list-group-item">Contacts: {{ detail.Contacts }}</li>
+            </ul>
+
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
